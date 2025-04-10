@@ -1,0 +1,30 @@
+{
+  "proxy": "localhost:5000", 
+  "files": [
+    "src/**/*.html",
+    "src/**/*.css",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/images/**/*"
+  ],
+  "watchEvents": [
+    "change",
+    "add",
+    "addDir",
+    "unlink",
+    "unlinkDir"
+  ],
+  "port": 3001,
+  "open": true,
+  "notify": false,
+  "ui": {
+    "port": 3002
+  },
+  "reloadOnRestart": true,
+  "logLevel": "info",
+  "logPrefix": "BS",
+  "logConnections": true,
+  "logFileChanges": true,
+  "logSnippet": true
+}
