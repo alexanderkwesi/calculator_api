@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "index.html",
   "scripts": {
-    "start:frontend": "npm run start || exit ",
+    "start:frontend": "open index.html || exit ",
     "start:backend": "cd backend && PORT=3000 node backend_code_api.js",
     "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
