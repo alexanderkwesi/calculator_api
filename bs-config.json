@@ -1,5 +1,5 @@
 {
-  "proxy": "localhost:5000", 
+  "proxy": "localhost:3000", 
   "files": [
     "src/**/*.html",
     "src/**/*.css",
