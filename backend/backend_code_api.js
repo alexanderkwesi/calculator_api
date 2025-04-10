@@ -11,7 +11,11 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 // Basic arithmetic operations
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // Parse JSON bodies
 app.use(bodyParser.json());
@@ -173,9 +177,9 @@ app.get("/:operation", (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../", "index.html"));
-});
+//app.get("/", (req, res) => {
+  //res.sendFile(path.join(__dirname, "../", "index.html"));
+//});
 
 app.post("/add", (req, res) => {
   const num1 = Array.isArray(req.body.num1) ? req.body.num1 : [];
