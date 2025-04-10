@@ -1,4 +1,4 @@
-const browserSyncConfig = {
+{
   injectChanges: false,
   files: [
     'src/**/*.html',
@@ -27,5 +27,4 @@ const browserSyncConfig = {
   logConnections: true,
   logFileChanges: true,
   logSnippet: true
-};
-
+}
