@@ -174,7 +174,7 @@ app.get("/:operation", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../my-website-in-typescript-main", "index.html"));
+  res.sendFile(path.join(__dirname, "../", "index.html"));
 });
 
 app.post("/add", (req, res) => {
