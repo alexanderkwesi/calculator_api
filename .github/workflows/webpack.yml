@@ -27,3 +27,4 @@ jobs:
         npm install
         npx webpack
         npm run dev
+        gh https://alexanderkwesi.github.io/calculator_api
