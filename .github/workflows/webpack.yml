@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: NodeJS with Webpack CI
 
 on:
   push:
@@ -21,10 +21,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
 
-    - name: Build
-      run: |
-        npm install
-        npx webpack
-        npm run dev
-        gh https://alexanderkwesi.github.io/calculator_api
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build with Webpack
+      run: npx webpack --mode=production
+
+    - name: Run tests (if you have them)
+      run: npm test
