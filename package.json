@@ -5,7 +5,7 @@
   "homepage": "index.html",
   "scripts": {
     "start:frontend": "lite-server",
-    "start:backend": "cd backend && PORT=10000 node backend_code_api.js",
+    "start:backend": "cd backend && PORT=process.env.PORT node backend_code_api.js",
     "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
   "keywords": [],
