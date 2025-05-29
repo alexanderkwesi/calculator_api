@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-    "react-app-rewired": "^2.2.1",
     "webpack-cli": "^5.0.0"
   }
 }
