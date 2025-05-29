@@ -336,6 +336,6 @@ app.post("/tan", (req, res) => {
     //`Scientific Calculator API is running on ${port} Server running on https://alexanderkwesi.github.io/calculator_api:3000`
   //);
 //});
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
 });
