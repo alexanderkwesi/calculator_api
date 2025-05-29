@@ -4,9 +4,9 @@
   "description": "",
   "homepage": "index.html",
   "scripts": {
-    "start:frontend": "lite-server",
-    "start:backend": "cd backend && PORT=process.env.PORT node backend_code_api.js",
-    "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    "start": "lite-server",
+    "build": "cd backend && PORT=process.env.PORT node backend_code_api.js",
+    "dev": "PORT=process.env.PORT concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
   "keywords": [],
   "author": "",
