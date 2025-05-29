@@ -8,6 +8,10 @@
     "build": "cd backend && PORT=process.env.PORT node backend_code_api.js",
     "dev": "PORT=process.env.PORT \"npm start\" \"npm run build\""
   },
+  "engines":
+  {
+    "node":"21.1.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
