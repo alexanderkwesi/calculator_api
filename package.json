@@ -5,7 +5,7 @@
   "homepage": "index.html",
   "scripts": {
     "start": "lite-server",
-    "build": "cd backend && PORT=process.env.PORT node backend_code_api.js",
+    "build": "PORT=process.env.PORT node backend/backend_code_api.js",
     "dev": "PORT=process.env.PORT \"npm start\" \"npm run build\""
   },
   "engines":
