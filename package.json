@@ -4,6 +4,7 @@
   "description": "",
   "homepage": "index.html",
   "scripts": {
+    "star": "open index.html",
     "build": "PORT=process.env.PORT node backend/backend_code_api.js"
   },
 "engines": {
