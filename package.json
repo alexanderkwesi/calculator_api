@@ -6,10 +6,10 @@
   "scripts": {
     "build": "PORT=process.env.PORT node backend/backend_code_api.js"
   },
-  "engines":
-  {
-    "node":">=18.18.0 >=21.1.0"
-  },
+"engines": {
+  "node": ">=18 <21"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
