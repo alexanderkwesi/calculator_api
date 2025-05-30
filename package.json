@@ -8,11 +8,7 @@
   },
 "engines": {
   "node": ">=18 <21"
-}
-,
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+},
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
